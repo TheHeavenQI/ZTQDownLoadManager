@@ -90,16 +90,13 @@
     }
     
     [[ZTQDownloadManager shareManager].task cancel];
-    
+    [[NSFileManager defaultManager] removeItemAtPath:DownLoadFilePath([ZTQDownloadManager shareManager].fileName) error:nil];
     [[ZTQDownloadManager shareManager].stream close];
     
     // 删除数据
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithContentsOfFile:ZTQDownFilesPlist];
     [dic removeObjectForKey:DownLoadFilePath([ZTQDownloadManager shareManager].fileName)];
     [dic writeToFile:ZTQDownFilesPlist atomically:YES];
-    
-    [[NSFileManager defaultManager] removeItemAtPath:DownLoadFilePath([ZTQDownloadManager shareManager].fileName) error:nil];
-    
     
     [ZTQDownloadManager shareManager].stream = nil;
     [ZTQDownloadManager shareManager].task = nil;
