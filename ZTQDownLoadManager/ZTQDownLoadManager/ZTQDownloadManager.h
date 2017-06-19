@@ -92,7 +92,20 @@ typedef void(^progressHandler)(NSProgress * _Nonnull downloadProgress);
                                      successHandler:(successHandler _Nullable)success
                                      failureHandler:(failureHandler _Nullable)failure;
 
+/**
+    取消下载 // 取消之后将删除下载的内容，并且清空所有信息
+ */
++ (void)cancelDownload;
 
+/**
+    暂停下载
+ */
++ (void)pauseDownload;
+
+/**
+    继续下载
+ */
++ (void)continueDownload;
 
 
 @end

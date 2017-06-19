@@ -34,6 +34,8 @@
 
 @implementation ZTQDownloadManager
 
+#pragma mark - public methods
+
 + (instancetype)shareManager {
     static ZTQDownloadManager *m;
     static dispatch_once_t onceToken;
@@ -74,11 +76,75 @@
     [ZTQDownloadManager shareManager].progresshandler = progress;
     [ZTQDownloadManager shareManager].success = success;
     [ZTQDownloadManager shareManager].failure = failure;
-    
+    [[ZTQDownloadManager shareManager] configDataTask];
     [[ZTQDownloadManager shareManager].task resume];
     
     return [ZTQDownloadManager shareManager].task;
     
+}
+
++ (void)cancelDownload {
+    
+    if (![ZTQDownloadManager shareManager].task) {
+        return;
+    }
+    
+    [[ZTQDownloadManager shareManager].task cancel];
+    
+    [[ZTQDownloadManager shareManager].stream close];
+    
+    // 删除数据
+    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithContentsOfFile:ZTQDownFilesPlist];
+    [dic removeObjectForKey:DownLoadFilePath([ZTQDownloadManager shareManager].fileName)];
+    [dic writeToFile:ZTQDownFilesPlist atomically:YES];
+    
+    [[NSFileManager defaultManager] removeItemAtPath:DownLoadFilePath([ZTQDownloadManager shareManager].fileName) error:nil];
+    
+    
+    [ZTQDownloadManager shareManager].stream = nil;
+    [ZTQDownloadManager shareManager].task = nil;
+    // 不保留上次信息
+    [ZTQDownloadManager shareManager].urlString = nil;
+    [ZTQDownloadManager shareManager].fileName = nil;
+    [ZTQDownloadManager shareManager].customHeader = nil;
+    [ZTQDownloadManager shareManager].customHeaderField = nil;
+    
+}
+
++ (void)pauseDownload {
+    if ([ZTQDownloadManager shareManager].task) {
+        [[ZTQDownloadManager shareManager].task suspend];
+    }
+}
+
++ (void)continueDownload {
+    if ([ZTQDownloadManager shareManager].task) {
+        [[ZTQDownloadManager shareManager].task resume];
+    }
+}
+
+#pragma mark - private methods
+
+- (void)configDataTask {
+    if (self.task) {
+        return;
+    }
+    // 获得文件总长度
+    NSInteger totalLength = [[[NSDictionary dictionaryWithContentsOfFile:ZTQDownFilesPlist] objectForKey:ZTQMD5String(self.urlString)] integerValue];
+    // 请求同一个文件，判断下载文件长度；如果没下载过此文件，totalLength = 0
+    if (totalLength && AlreadyDownloadLenth(self.fileName) == totalLength) {
+        NSLog(@"文件已经下载过.");
+        return ;
+    }
+    
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.urlString]];
+    
+    if (self.customHeaderString.length > 0 && self.customHeaderField.length > 0) {
+        [req setValue:self.customHeaderString forHTTPHeaderField:self.customHeaderField];
+    }
+    NSString *range = [NSString stringWithFormat:@"bytes=%zd-", AlreadyDownloadLenth(self.fileName)];
+    [req setValue:range forHTTPHeaderField:@"Range"];
+    self.task = [self.session dataTaskWithRequest:req];
 }
 
 #pragma mark - NSURLSessionDataDelegate
@@ -97,10 +163,6 @@
     
     if (self.fileName.length == 0) {
         self.fileName = response.suggestedFilename;
-    }
-    
-    if ([self.fileName containsString:@"."]) {
-        
     }
     
     self.stream = [NSOutputStream outputStreamToFileAtPath:DownLoadFilePath(self.fileName) append:YES];
@@ -190,30 +252,6 @@
     return _session;
 }
 
-- (NSURLSessionDataTask *)task {
-    if (!_task) {
-        _task = ({
-            // 获得文件总长度
-            NSInteger totalLength = [[[NSDictionary dictionaryWithContentsOfFile:ZTQDownFilesPlist] objectForKey:ZTQMD5String(self.urlString)] integerValue];
-            // 请求同一个文件，判断下载文件长度；如果没下载过此文件，totalLength = 0
-            if (totalLength && AlreadyDownloadLenth(self.fileName) == totalLength) {
-                NSLog(@"文件已经下载过.");
-                return nil;
-            }
-            
-            NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.urlString]];
-
-            if (self.customHeaderString.length > 0 && self.customHeaderField.length > 0) {
-                [req setValue:self.customHeaderString forHTTPHeaderField:self.customHeaderField];
-            }
-            NSString *range = [NSString stringWithFormat:@"bytes=%zd-", AlreadyDownloadLenth(self.fileName)];
-            [req setValue:range forHTTPHeaderField:@"Range"];
-            NSURLSessionDataTask *t = [self.session dataTaskWithRequest:req];
-            t;
-        });
-    }
-    return _task;
-}
 
 - (NSString *)customHeaderString {
     if (!_customHeaderString) {

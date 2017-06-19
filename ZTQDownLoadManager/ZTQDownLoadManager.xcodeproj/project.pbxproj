@@ -522,6 +522,7 @@
 				3B1954431EF7B4F7000DFD32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B1954441EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +531,7 @@
 				3B1954461EF7B4F7000DFD32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B1954471EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +540,7 @@
 				3B1954491EF7B4F7000DFD32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
