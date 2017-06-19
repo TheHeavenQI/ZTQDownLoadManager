@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B1954191EF7B4F7000DFD32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1954181EF7B4F7000DFD32 /* main.m */; };
+		3B19541C1EF7B4F7000DFD32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19541B1EF7B4F7000DFD32 /* AppDelegate.m */; };
+		3B19541F1EF7B4F7000DFD32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19541E1EF7B4F7000DFD32 /* ViewController.m */; };
+		3B1954221EF7B4F7000DFD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1954201EF7B4F7000DFD32 /* Main.storyboard */; };
+		3B1954241EF7B4F7000DFD32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1954231EF7B4F7000DFD32 /* Assets.xcassets */; };
+		3B1954271EF7B4F7000DFD32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1954251EF7B4F7000DFD32 /* LaunchScreen.storyboard */; };
+		3B1954321EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1954311EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.m */; };
+		3B19543D1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19543C1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.m */; };
+		3B19544C1EF7B72F000DFD32 /* ZTQDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B19544B1EF7B72F000DFD32 /* ZTQDownloadManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B19542E1EF7B4F7000DFD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B19540C1EF7B4F7000DFD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B1954131EF7B4F7000DFD32;
+			remoteInfo = ZTQDownLoadManager;
+		};
+		3B1954391EF7B4F7000DFD32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B19540C1EF7B4F7000DFD32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B1954131EF7B4F7000DFD32;
+			remoteInfo = ZTQDownLoadManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B1954141EF7B4F7000DFD32 /* ZTQDownLoadManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTQDownLoadManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1954181EF7B4F7000DFD32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B19541A1EF7B4F7000DFD32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B19541B1EF7B4F7000DFD32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B19541D1EF7B4F7000DFD32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3B19541E1EF7B4F7000DFD32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B1954211EF7B4F7000DFD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B1954231EF7B4F7000DFD32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B1954261EF7B4F7000DFD32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B1954281EF7B4F7000DFD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B19542D1EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTQDownLoadManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1954311EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTQDownLoadManagerTests.m; sourceTree = "<group>"; };
+		3B1954331EF7B4F7000DFD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1954381EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTQDownLoadManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B19543C1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTQDownLoadManagerUITests.m; sourceTree = "<group>"; };
+		3B19543E1EF7B4F7000DFD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B19544A1EF7B72F000DFD32 /* ZTQDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTQDownloadManager.h; sourceTree = "<group>"; };
+		3B19544B1EF7B72F000DFD32 /* ZTQDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTQDownloadManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B1954111EF7B4F7000DFD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B19542A1EF7B4F7000DFD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1954351EF7B4F7000DFD32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B19540B1EF7B4F7000DFD32 = {
+			isa = PBXGroup;
+			children = (
+				3B1954161EF7B4F7000DFD32 /* ZTQDownLoadManager */,
+				3B1954301EF7B4F7000DFD32 /* ZTQDownLoadManagerTests */,
+				3B19543B1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests */,
+				3B1954151EF7B4F7000DFD32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B1954151EF7B4F7000DFD32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B1954141EF7B4F7000DFD32 /* ZTQDownLoadManager.app */,
+				3B19542D1EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.xctest */,
+				3B1954381EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B1954161EF7B4F7000DFD32 /* ZTQDownLoadManager */ = {
+			isa = PBXGroup;
+			children = (
+				3B19541A1EF7B4F7000DFD32 /* AppDelegate.h */,
+				3B19541B1EF7B4F7000DFD32 /* AppDelegate.m */,
+				3B19541D1EF7B4F7000DFD32 /* ViewController.h */,
+				3B19541E1EF7B4F7000DFD32 /* ViewController.m */,
+				3B19544A1EF7B72F000DFD32 /* ZTQDownloadManager.h */,
+				3B19544B1EF7B72F000DFD32 /* ZTQDownloadManager.m */,
+				3B1954201EF7B4F7000DFD32 /* Main.storyboard */,
+				3B1954231EF7B4F7000DFD32 /* Assets.xcassets */,
+				3B1954251EF7B4F7000DFD32 /* LaunchScreen.storyboard */,
+				3B1954281EF7B4F7000DFD32 /* Info.plist */,
+				3B1954171EF7B4F7000DFD32 /* Supporting Files */,
+			);
+			path = ZTQDownLoadManager;
+			sourceTree = "<group>";
+		};
+		3B1954171EF7B4F7000DFD32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B1954181EF7B4F7000DFD32 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B1954301EF7B4F7000DFD32 /* ZTQDownLoadManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B1954311EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.m */,
+				3B1954331EF7B4F7000DFD32 /* Info.plist */,
+			);
+			path = ZTQDownLoadManagerTests;
+			sourceTree = "<group>";
+		};
+		3B19543B1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B19543C1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.m */,
+				3B19543E1EF7B4F7000DFD32 /* Info.plist */,
+			);
+			path = ZTQDownLoadManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B1954131EF7B4F7000DFD32 /* ZTQDownLoadManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1954411EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManager" */;
+			buildPhases = (
+				3B1954101EF7B4F7000DFD32 /* Sources */,
+				3B1954111EF7B4F7000DFD32 /* Frameworks */,
+				3B1954121EF7B4F7000DFD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZTQDownLoadManager;
+			productName = ZTQDownLoadManager;
+			productReference = 3B1954141EF7B4F7000DFD32 /* ZTQDownLoadManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B19542C1EF7B4F7000DFD32 /* ZTQDownLoadManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1954441EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManagerTests" */;
+			buildPhases = (
+				3B1954291EF7B4F7000DFD32 /* Sources */,
+				3B19542A1EF7B4F7000DFD32 /* Frameworks */,
+				3B19542B1EF7B4F7000DFD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B19542F1EF7B4F7000DFD32 /* PBXTargetDependency */,
+			);
+			name = ZTQDownLoadManagerTests;
+			productName = ZTQDownLoadManagerTests;
+			productReference = 3B19542D1EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B1954371EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1954471EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManagerUITests" */;
+			buildPhases = (
+				3B1954341EF7B4F7000DFD32 /* Sources */,
+				3B1954351EF7B4F7000DFD32 /* Frameworks */,
+				3B1954361EF7B4F7000DFD32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B19543A1EF7B4F7000DFD32 /* PBXTargetDependency */,
+			);
+			name = ZTQDownLoadManagerUITests;
+			productName = ZTQDownLoadManagerUITests;
+			productReference = 3B1954381EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B19540C1EF7B4F7000DFD32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ZTQ;
+				TargetAttributes = {
+					3B1954131EF7B4F7000DFD32 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2A5X76LEM4;
+						ProvisioningStyle = Automatic;
+					};
+					3B19542C1EF7B4F7000DFD32 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2A5X76LEM4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B1954131EF7B4F7000DFD32;
+					};
+					3B1954371EF7B4F7000DFD32 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2A5X76LEM4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B1954131EF7B4F7000DFD32;
+					};
+				};
+			};
+			buildConfigurationList = 3B19540F1EF7B4F7000DFD32 /* Build configuration list for PBXProject "ZTQDownLoadManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B19540B1EF7B4F7000DFD32;
+			productRefGroup = 3B1954151EF7B4F7000DFD32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B1954131EF7B4F7000DFD32 /* ZTQDownLoadManager */,
+				3B19542C1EF7B4F7000DFD32 /* ZTQDownLoadManagerTests */,
+				3B1954371EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B1954121EF7B4F7000DFD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1954271EF7B4F7000DFD32 /* LaunchScreen.storyboard in Resources */,
+				3B1954241EF7B4F7000DFD32 /* Assets.xcassets in Resources */,
+				3B1954221EF7B4F7000DFD32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B19542B1EF7B4F7000DFD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1954361EF7B4F7000DFD32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B1954101EF7B4F7000DFD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B19541F1EF7B4F7000DFD32 /* ViewController.m in Sources */,
+				3B19544C1EF7B72F000DFD32 /* ZTQDownloadManager.m in Sources */,
+				3B19541C1EF7B4F7000DFD32 /* AppDelegate.m in Sources */,
+				3B1954191EF7B4F7000DFD32 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1954291EF7B4F7000DFD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1954321EF7B4F7000DFD32 /* ZTQDownLoadManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1954341EF7B4F7000DFD32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B19543D1EF7B4F7000DFD32 /* ZTQDownLoadManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B19542F1EF7B4F7000DFD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B1954131EF7B4F7000DFD32 /* ZTQDownLoadManager */;
+			targetProxy = 3B19542E1EF7B4F7000DFD32 /* PBXContainerItemProxy */;
+		};
+		3B19543A1EF7B4F7000DFD32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B1954131EF7B4F7000DFD32 /* ZTQDownLoadManager */;
+			targetProxy = 3B1954391EF7B4F7000DFD32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B1954201EF7B4F7000DFD32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1954211EF7B4F7000DFD32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B1954251EF7B4F7000DFD32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1954261EF7B4F7000DFD32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B19543F1EF7B4F7000DFD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B1954401EF7B4F7000DFD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B1954421EF7B4F7000DFD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2A5X76LEM4;
+				INFOPLIST_FILE = ZTQDownLoadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztq.ZTQDownLoadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B1954431EF7B4F7000DFD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2A5X76LEM4;
+				INFOPLIST_FILE = ZTQDownLoadManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztq.ZTQDownLoadManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B1954451EF7B4F7000DFD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2A5X76LEM4;
+				INFOPLIST_FILE = ZTQDownLoadManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztq.ZTQDownLoadManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTQDownLoadManager.app/ZTQDownLoadManager";
+			};
+			name = Debug;
+		};
+		3B1954461EF7B4F7000DFD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2A5X76LEM4;
+				INFOPLIST_FILE = ZTQDownLoadManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztq.ZTQDownLoadManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTQDownLoadManager.app/ZTQDownLoadManager";
+			};
+			name = Release;
+		};
+		3B1954481EF7B4F7000DFD32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2A5X76LEM4;
+				INFOPLIST_FILE = ZTQDownLoadManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztq.ZTQDownLoadManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZTQDownLoadManager;
+			};
+			name = Debug;
+		};
+		3B1954491EF7B4F7000DFD32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2A5X76LEM4;
+				INFOPLIST_FILE = ZTQDownLoadManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ztq.ZTQDownLoadManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZTQDownLoadManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B19540F1EF7B4F7000DFD32 /* Build configuration list for PBXProject "ZTQDownLoadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B19543F1EF7B4F7000DFD32 /* Debug */,
+				3B1954401EF7B4F7000DFD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B1954411EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1954421EF7B4F7000DFD32 /* Debug */,
+				3B1954431EF7B4F7000DFD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B1954441EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1954451EF7B4F7000DFD32 /* Debug */,
+				3B1954461EF7B4F7000DFD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B1954471EF7B4F7000DFD32 /* Build configuration list for PBXNativeTarget "ZTQDownLoadManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1954481EF7B4F7000DFD32 /* Debug */,
+				3B1954491EF7B4F7000DFD32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B19540C1EF7B4F7000DFD32 /* Project object */;
+}
